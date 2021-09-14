@@ -70,18 +70,18 @@
 
 .cloud1 {
   position: absolute;
-  top: 60%;
+  top: 40%;
   left: 50%;
-  transform: translate(-60%, -50%);
+  transform: translate(-40%, -50%);
   max-width: 600px;
   z-index: 10000;
   animation: animateCloud 50s linear infinite;
 }
 .cloud2 {
   position: absolute;
-  top: 65%;
+  top: 45%;
   left: 50%;
-  transform: translate(-65%, -50%);
+  transform: translate(-45%, -50%);
   max-width: 500px;
   z-index: 10000;
   animation: animateCloud 35s linear infinite;
@@ -97,9 +97,9 @@
 }
 .cloud4 {
   position: absolute;
-  top: 65%;
+  top: 55%;
   left: 50%;
-  transform: translate(-65%, -50%);
+  transform: translate(-55%, -50%);
   max-width: 300px;
   z-index: 10000;
   animation: animateCloud 70s linear infinite;
@@ -107,9 +107,9 @@
 }
 .cloud5 {
   position: absolute;
-  top: 60%;
+  top: 40%;
   left: 50%;
-  transform: translate(-60%, -50%);
+  transform: translate(-40%, -50%);
   max-width: 500px;
   z-index: 10000;
   animation: animateCloud 40s linear infinite;
