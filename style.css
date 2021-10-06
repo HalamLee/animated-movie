@@ -4,6 +4,23 @@
   box-sizing: border-box;
 }
 
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#111425, #3751e0);
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+/* .loading {
+  display: none;
+} */
+
+.main {
+  display: none;
+}
+
 .nav-bar {
   position: fixed;
   display: flex;
@@ -33,15 +50,6 @@
 .nav-bar a {
   text-decoration: none;
   color: inherit;
-}
-
-.scene {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(#111425, #3751e0);
-  background-attachment: fixed;
-  overflow: hidden;
 }
 
 .moon {
@@ -83,6 +91,19 @@
   top: -10%;
   left: -250px;
   z-index: 1000;
+  animation: logoTextAnimate linear 5s;
+}
+
+@keyframes logoTextAnimate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.3);
+  }
 }
 
 .scene star {
