@@ -56,19 +56,6 @@
   top: -10%;
   left: -250px;
   z-index: 1000;
-  animation: logoTextAnimate linear 5s;
-}
-
-@keyframes logoTextAnimate {
-  0% {
-    transform: scale(1);
-  }
-  /* 50% {
-    transform: scale(1.2);
-  } */
-  100% {
-    transform: scale(1.4);
-  }
 }
 
 .scene star {
@@ -96,8 +83,8 @@
 .cloud1 {
   position: absolute;
   top: 40%;
-  left: 50%;
-  transform: translate(-40%, -50%);
+  left: 60%;
+  transform: translate(-40%, -60%);
   max-width: 600px;
   z-index: 10000;
   animation: animateCloud 50s linear infinite;
@@ -105,8 +92,8 @@
 .cloud2 {
   position: absolute;
   top: 45%;
-  left: 50%;
-  transform: translate(-45%, -50%);
+  left: 70%;
+  transform: translate(-45%, -70%);
   max-width: 500px;
   z-index: 10000;
   animation: animateCloud 35s linear infinite;
@@ -114,8 +101,8 @@
 .cloud3 {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 60%;
+  transform: translate(-50%, -60%);
   max-width: 600px;
   z-index: 10000;
   animation: animateCloud 80s linear infinite;
@@ -123,8 +110,8 @@
 .cloud4 {
   position: absolute;
   top: 55%;
-  left: 50%;
-  transform: translate(-55%, -50%);
+  left: 60%;
+  transform: translate(-55%, -60%);
   max-width: 300px;
   z-index: 10000;
   animation: animateCloud 70s linear infinite;
@@ -133,8 +120,8 @@
 .cloud5 {
   position: absolute;
   top: 40%;
-  left: 50%;
-  transform: translate(-40%, -50%);
+  left: 60%;
+  transform: translate(-40%, -60%);
   max-width: 500px;
   z-index: 10000;
   animation: animateCloud 40s linear infinite;
@@ -143,8 +130,8 @@
 .cloud6 {
   position: absolute;
   top: 55%;
-  left: 50%;
-  transform: translate(-55%, -50%);
+  left: 60%;
+  transform: translate(-55%, -60%);
   max-width: 400px;
   z-index: 10000;
   animation: animateCloud 30s linear infinite;
