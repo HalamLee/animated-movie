@@ -1,6 +1,6 @@
 function stars() {
   let count = 500;
-  let scene = document.querySelector(".scene");
+  let loading = document.querySelector(".loading");
   let i = 0;
   while (i < count) {
     let star = document.createElement("star");
@@ -17,7 +17,7 @@ function stars() {
     star.style.animationDuration = 5 + duration + "s";
     star.style.animationDelay = duration + "s";
 
-    scene.appendChild(star);
+    loading.appendChild(star);
     i++;
   }
 }
