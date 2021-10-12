@@ -1,7 +1,9 @@
 const loading = document.querySelector(".loading");
-const main = document.querySelector(".main");
+const scene = document.querySelector(".scene");
+const mainScene = document.querySelector(".main-scene");
 
 setTimeout(function () {
   loading.style.display = "none";
-  main.style.display = "block";
+  scene.style.height = "100%";
+  mainScene.style.display = "block";
 }, 5000);
