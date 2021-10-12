@@ -82,8 +82,6 @@ const genres = [
     name: "Western",
   },
 ];
-console.log("hi");
-document.body.style.backgroundColor = "red";
 
 const main = document.getElementById("main");
 const form = document.getElementById("form");
