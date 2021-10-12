@@ -127,6 +127,10 @@ span {
   }
 }
 
+.btns {
+  display: flex;
+}
+
 .btn {
   width: 100px;
   height: 40px;
@@ -136,12 +140,18 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s;
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
+  color: white;
+}
+
+.btn:first-child {
+  margin-right: 100px;
 }
 
 .btn:hover {
   background-color: white;
+  color: black;
 }
 
 a {
