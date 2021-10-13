@@ -7,7 +7,6 @@ const API_URL =
   "/discover/movie?with_genres=16&with_companies=2&language=ko&" +
   API_KEY;
 const IMG_URL = "https://image.tmdb.org/t/p/w500";
-const searchURL = BASE_URL + "/search/movie?" + API_KEY;
 
 //Genres
 // const genres = [
@@ -105,8 +104,6 @@ const companies = [
 ];
 
 const main = document.getElementById("main");
-const form = document.getElementById("form");
-const search = document.getElementById("search");
 const tagsEl = document.getElementById("tags");
 
 const prev = document.getElementById("prev");
@@ -454,36 +451,6 @@ function getColor(vote) {
     return "red";
   }
 }
-
-//Genre
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault();
-
-//   const searchTerm = search.value;
-//   selectedGenre = [];
-//   highlightSelection();
-
-//   if (searchTerm) {
-//     getMovies(searchURL + "&query=" + searchTerm);
-//   } else {
-//     getMovies(API_URL);
-//   }
-// });
-
-//Company
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  const searchTerm = search.value;
-  selectedCompany = [];
-  highlightSelection();
-
-  if (searchTerm) {
-    getMovies(searchURL + "&query=" + searchTerm);
-  } else {
-    getMovies(API_URL);
-  }
-});
 
 prev.addEventListener("click", () => {
   if (prevPage > 0) {
