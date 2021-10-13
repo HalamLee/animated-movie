@@ -360,6 +360,10 @@ main {
   overflow: hidden;
 }
 
+.know-more {
+  cursor: pointer;
+}
+
 .movie:hover .overview {
   transform: translateY(0);
 }
