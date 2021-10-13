@@ -275,6 +275,14 @@ main {
   transition: transform 0.3s ease-in;
 }
 
+.overview p {
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .movie:hover .overview {
   transform: translateY(0);
 }
