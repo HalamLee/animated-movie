@@ -230,7 +230,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem 1rem;
+  padding: 0.5rem 1rem 0.3rem;
   letter-spacing: 0.5px;
 }
 
@@ -255,6 +255,12 @@ main {
 
 .movie-info span.red {
   color: red;
+}
+
+.movie-release {
+  color: rgba(200, 200, 200, 0.445);
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 
 .overview {
