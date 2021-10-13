@@ -1,9 +1,10 @@
-const API_KEY = "api_key=9cc8f7332867c3161962ea0af4b01150&language=ko";
+const API_KEY =
+  "api_key=9cc8f7332867c3161962ea0af4b01150&sort_by=popularity.desc";
 const BASE_URL = "https://api.themoviedb.org/3";
 // const API_URL = BASE_URL + "/discover/movie?sort_by=popularity.desc&" + API_KEY;
 const API_URL =
   BASE_URL +
-  "/discover/movie?with_genres=16&with_companies=2&sort_by=popularity.desc&" +
+  "/discover/movie?with_genres=16&with_companies=2&language=ko&" +
   API_KEY;
 const IMG_URL = "https://image.tmdb.org/t/p/w500";
 const searchURL = BASE_URL + "/search/movie?" + API_KEY;
@@ -152,6 +153,7 @@ var totalPages = 100;
 
 var selectedCompany = [];
 setCompany();
+
 function setCompany() {
   tagsEl.innerHTML = "";
   companies.forEach((company) => {
@@ -175,7 +177,10 @@ function setCompany() {
       }
       console.log(selectedCompany);
       getMovies(
-        API_URL + "&with_companies=" + encodeURI(selectedCompany.join(","))
+        API_URL +
+          "&with_companies=" +
+          encodeURI(selectedCompany.join(",")) +
+          "&sort_by=vote_average.desc"
       );
       highlightSelection();
     });
@@ -205,6 +210,10 @@ function highlightSelection() {
     tag.classList.remove("highlight");
   });
   clearBtn();
+  if (selectedCompany.length == 0) {
+    setCompany();
+    getMovies(API_URL);
+  }
   if (selectedCompany.length != 0) {
     selectedCompany.forEach((id) => {
       const highlightTag = document.getElementById(id);
@@ -292,6 +301,7 @@ function showMovies(data) {
     const { title, poster_path, vote_average, overview, id, release_date } =
       movie;
     const movieEl = document.createElement("div");
+
     movieEl.classList.add("movie");
     movieEl.innerHTML = `
         <img src="${
