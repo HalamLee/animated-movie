@@ -91,7 +91,7 @@ const IMG_URL = "https://image.tmdb.org/t/p/w500";
 const companies = [
   {
     id: 2,
-    name: "Walt Disney Pictures",
+    name: "Disney",
   },
   {
     id: 3,
