@@ -98,8 +98,8 @@ const companies = [
     name: "Pixar",
   },
   {
-    id: 7,
-    name: "DreamWorks Pictures",
+    id: 521,
+    name: "DreamWorks",
   },
 ];
 
@@ -210,8 +210,7 @@ function highlightSelection() {
   if (selectedCompany.length == 0) {
     setCompany();
     getMovies(API_URL);
-  }
-  if (selectedCompany.length != 0) {
+  } else {
     selectedCompany.forEach((id) => {
       const highlightTag = document.getElementById(id);
       highlightTag.classList.add("highlight");
